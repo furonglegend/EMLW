@@ -7,6 +7,8 @@ Status: scaffold / skeleton code — core interfaces and small working examples 
 
 ### Repository layout:
 **Our method/**
+```text
+.
 ├─ `configs.py`              # default hyperparameters and paths
 ├─ `utils.py`                # logging, checkpointing, metrics (Accuracy/MCC/SNR), helpers
 ├─ `data.py`                 # PyTorch Dataset, augmentations (temporal warp, noise, channel mask)
@@ -28,7 +30,7 @@ Status: scaffold / skeleton code — core interfaces and small working examples 
 │  ├─ `run_client_sim.py`
 │  └─ `analyze_ablation.py`
 └─ `README.md`
-
+```
 
 Design & modules:
 
