@@ -1,4 +1,4 @@
-Our method — Lightweight implementation scaffold for this Conference Our method
+Our method, Lightweight implementation scaffold for this Conference Our method
 
 A modular, research-oriented codebase scaffold implementing the components described in the this Conference Our method paper (CAFW, HSF, CDE, PCRL, RL-Gating, DP aggregation, compression, etc.).
 This repository provides minimal, well-documented skeletons for each major component so you can quickly fill in algorithmic details, run experiments, and iterate on reproducible evaluations.
@@ -32,7 +32,7 @@ Status: scaffold / skeleton code. Core interfaces and small working examples inc
 └─ `README.md`
 ```
 
-Design & modules:
+### Design & modules:
 
 configs.py: Contains default hyperparameters and a get_config helper. Override defaults with a JSON config file or CLI arguments.
 
@@ -71,7 +71,7 @@ eval.py: Evaluation helpers (accuracy, MCC, SNR, PSNR/SSIM placeholders).
 deploy_edge.py: Build a stripped model to deploy to constrained devices; includes simple inference wrapper.
 
 
-Extending the scaffold:
+### Extending the scaffold:
 
 Suggested next steps to implement the full paper pipeline:
 
@@ -89,7 +89,7 @@ Add unit tests for each module and CI integration.
 
 
 
-Testing & debugging tips:
+### Testing & debugging tips:
 
 Use Our method.data.synthetic_dataset for deterministic tests of data pipeline and model forward passes.
 
