@@ -5,29 +5,29 @@ This repository provides minimal, well-documented skeletons for each major compo
 
 Status: scaffold / skeleton code — core interfaces and small working examples included. Replace TODO markers with paper-specific equations and hyperparameters.
 
-Repository layout:
-Our method/
-├─ configs.py                # default hyperparameters and paths
-├─ utils.py                  # logging, checkpointing, metrics (Accuracy/MCC/SNR), helpers
-├─ data.py                   # PyTorch Dataset, augmentations (temporal warp, noise, channel mask)
-├─ models.py                 # encoder, projection head, classifier, policy skeleton
-├─ cafw.py                   # Context-Aware Feature Weighting (ontology embedding + scorer)
-├─ hsf.py                    # Heterogeneous Stream Fusion (cross-attention fusion)
-├─ cde.py                    # Clinical Dependency Encoder (dense GAT layers)
-├─ pcrl.py                   # Prototype-Consistent Representation Learning (prototypes + NT-Xent)
-├─ rl_gating.py              # RL-Gating environment and small REINFORCE agent
-├─ privacy.py                # DP helpers: clipping, sigma calc, secure_aggregate placeholder
-├─ compression.py            # sparsify, quantize, residual compensation
-├─ client.py                 # client pipeline that composes modules and returns simulated updates
-├─ server.py                 # server pipeline for client selection and DP aggregation
-├─ train.py                  # simple experiment driver (federated simulation + export)
-├─ eval.py                   # evaluation helpers (accuracy, mcc, snr, psnr, ssim placeholder)
-├─ deploy_edge.py            # edge export/inference helpers (Raspberry Pi simulation)
-├─ scripts/
-│   ├─ run_fed_experiment.py
-│   ├─ run_client_sim.py
-│   └─ analyze_ablation.py
-└─ README.md
+### Repository layout:
+**Our method/**
+├─ `configs.py`              # default hyperparameters and paths
+├─ `utils.py`                # logging, checkpointing, metrics (Accuracy/MCC/SNR), helpers
+├─ `data.py`                 # PyTorch Dataset, augmentations (temporal warp, noise, channel mask)
+├─ `models.py`               # encoder, projection head, classifier, policy skeleton
+├─ `cafw.py`                 # Context-Aware Feature Weighting (ontology embedding + scorer)
+├─ `hsf.py`                  # Heterogeneous Stream Fusion (cross-attention fusion)
+├─ `cde.py`                  # Clinical Dependency Encoder (dense GAT layers)
+├─ `pcrl.py`                 # Prototype-Consistent Representation Learning (prototypes + NT-Xent)
+├─ `rl_gating.py`            # RL-Gating environment and small REINFORCE agent
+├─ `privacy.py`              # DP helpers: clipping, sigma calc, secure_aggregate placeholder
+├─ `compression.py`          # sparsify, quantize, residual compensation
+├─ `client.py`               # client pipeline that composes modules and returns simulated updates
+├─ `server.py`               # server pipeline for client selection and DP aggregation
+├─ `train.py`                # simple experiment driver (federated simulation + export)
+├─ `eval.py`                 # evaluation helpers (accuracy, mcc, snr, psnr, ssim placeholder)
+├─ `deploy_edge.py`          # edge export/inference helpers (Raspberry Pi simulation)
+├─ **scripts/**
+│  ├─ `run_fed_experiment.py`
+│  ├─ `run_client_sim.py`
+│  └─ `analyze_ablation.py`
+└─ `README.md`
 
 
 Design & modules:
