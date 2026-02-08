@@ -3,7 +3,7 @@ Our method — Lightweight implementation scaffold for this Conference Our metho
 A modular, research-oriented codebase scaffold implementing the components described in the this Conference Our method paper (CAFW, HSF, CDE, PCRL, RL-Gating, DP aggregation, compression, etc.).
 This repository provides minimal, well-documented skeletons for each major component so you can quickly fill in algorithmic details, run experiments, and iterate on reproducible evaluations.
 
-Status: scaffold / skeleton code — core interfaces and small working examples included. Replace TODO markers with paper-specific equations and hyperparameters.
+Status: scaffold / skeleton code. Core interfaces and small working examples included. Replace TODO markers with paper-specific equations and hyperparameters.
 
 ### Repository layout:
 **Our method/**
